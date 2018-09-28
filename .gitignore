@@ -1,0 +1,6 @@
+
+.idea
+.config.codekit3
+**/scss/*
+*.map
+.history

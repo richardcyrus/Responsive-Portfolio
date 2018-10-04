@@ -32,7 +32,13 @@
                             <h1 class="article__title">About Me</h1>
                         </header><!-- .article__header -->
                         <section class="article__content">
-                            <img class="article__image" src="assets/images/profile_169x156.jpg" alt="Richard Cyrus">
+                            <img class="article__image"
+                                srcset="assets/images/profile_169x156.jpg 169w,
+                                        assets/images/profile_510w.jpg 510w"
+                                sizes="(max-width: 40rem) 510px,
+                                        169px"
+                                src="assets/images/profile_169x156.jpg"
+                                alt="Richard Cyrus">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at luctus leo. Vivamus
                                 rhoncus consequat orci, sed malesuada dui rutrum ac. Maecenas vehicula dictum nunc,
                                 pellentesque dignissim diam viverra eget. Maecenas vitae consequat metus, fermentum

@@ -88,14 +88,14 @@ a:hover {
 /* #region .site */
 .site {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100vw;
   grid-template-rows: auto 1fr 4rem;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 48rem) {
   .site {
     grid-template-rows: auto 1fr 6rem;
   }
@@ -135,6 +135,14 @@ a:hover {
     height: auto;
     margin: 0;
     width: auto;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  .site-header__wrap {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 46rem;
   }
 }
 
@@ -186,6 +194,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 48rem) {
+  .site-content {
+    width: 46rem;
+  }
+}
+
 /* #endregion .site-content */
 /* #region .site-main */
 .site-main {
@@ -214,11 +228,11 @@ a:hover {
   width: 60rem;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 48rem) {
   .site-footer__wrap {
     padding-bottom: 2rem;
     padding-top: 2rem;
-    width: 100vw;
+    width: auto;
   }
 }
 
@@ -305,6 +319,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 48rem) {
+  .menu__link {
+    font-size: 1.1rem;
+  }
+}
+
 /* #endregion .menu */
 /* #region .form */
 .form__control-group {
@@ -385,6 +405,12 @@ a:hover {
   }
 }
 
+@media screen and (max-width: 48rem) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .portfolio__link {
   display: block;
   margin: 0;
@@ -423,7 +449,7 @@ a:hover {
   top: -3.5rem;
 }
 
-@media screen and (max-width: 40rem) {
+@media screen and (max-width: 48rem) {
   .portfolio__title {
     background-color: #4aaaa5;
   }

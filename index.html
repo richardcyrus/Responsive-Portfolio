@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
         <title>Responsive Portfolio :: About</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
+
     <body>
         <div class="site">
             <header class="site-header">
@@ -32,15 +34,11 @@
                             <h1 class="article__title">About Me</h1>
                         </header><!-- .article__header -->
                         <section class="article__content">
-                            <img class="article__image"
-                                srcset="assets/images/profile_169x156.jpg 169w,
-                                        assets/images/profile_338w.jpg 338w,
-                                        assets/images/profile_510w.jpg 510w"
-                                sizes="(max-width: 40rem) 534px,
-                                       (max-width: 48rem) 338px,
-                                        169px"
-                                src="assets/images/profile_169x156.jpg"
-                                alt="Richard Cyrus">
+                            <picture class="article__image">
+                                <source media="(max-width: 979.98px) and (min-width: 768px)" srcset="assets/images/profile_338w.jpg">
+                                <source media="(min-width: 980px)" srcset="assets/images/profile_169x156.jpg">
+                                <img src="assets/images/profile_510w.jpg" alt="Richard Cyrus">
+                            </picture>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut at luctus leo. Vivamus
                                 rhoncus consequat orci, sed malesuada dui rutrum ac. Maecenas vehicula dictum nunc,
                                 pellentesque dignissim diam viverra eget. Maecenas vitae consequat metus, fermentum
@@ -73,4 +71,5 @@
             </footer><!-- .site-footer -->
         </div><!-- .site -->
     </body>
+
 </html>
